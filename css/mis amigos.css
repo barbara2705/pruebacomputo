@@ -1,0 +1,53 @@
+.portafolios{
+    display: flex;
+    background:rgb(180, 245, 220);
+}
+.titulo{
+    color: darkmagenta;
+    text-align:center ;
+    padding-bottom:20px;
+}
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 40%;
+    margin-bottom: 50px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    cursor:pointer;
+    box-shadow: 5PX 0 9px 0 black;
+    position: relative;
+}
+.imagin-port >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1);
+    background: hsla(273, 91%, 27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria img{
+    width: 50px;
+}
+.hover-galeria p{
+    color:rgb(197, 236, 230);
+}
+.imagen-port:hover .hover-galeria{
+    transform: scale(0);
+}

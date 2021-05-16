@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.titulo{
+    color: crimson;
+    background: cyan;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.fondo4{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../imagenes/estrellado.gif');
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    width:340px;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: rgb(122, 214, 210);
+    box-shadow: 0px 1px 10px rgba(12, 77, 46, 0.726);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(7, 105, 97, 0.4);
+    transform: translateY(-4%);
+}
+.card img{
+    width: 100%;
+    height: 270px;
+}
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+.card .contenido p{
+    line-height: 1.5;
+    color:#6a6a6a;
+}
+.card .contenido h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+}

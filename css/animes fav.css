@@ -1,0 +1,9 @@
+*{
+    margin:0;
+}
+.titulo{
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
